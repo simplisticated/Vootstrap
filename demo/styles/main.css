@@ -1,3 +1,7 @@
 [v-cloak] {
 	display: none;
 }
+
+.slight-margin-from-top {
+	margin-top: 16px;
+}
