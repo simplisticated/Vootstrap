@@ -21,7 +21,8 @@ Copy [vootstrap.js](vootstrap.js) to your project.
 
 ## Requirements
 
-No special requirements.
+- [Vue.js](https://vuejs.org)
+- [Bootstrap](https://getbootstrap.com)
 
 ## Usage
 
