@@ -27,6 +27,8 @@ No special requirements.
 
 Examples will be published soon.
 
+See [demo app](demo/index.html).
+
 ## License
 
 `Vootstrap` is available under the Apache 2.0 license. See the [LICENSE](./LICENSE) file for more info.
