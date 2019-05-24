@@ -9,3 +9,22 @@
 	</a>
 </p>
 
+## At a Glance
+
+`Vootstrap` is a carefully thought-out combination of [Vue.js](https://vuejs.org) and [Bootstrap](https://getbootstrap.com) frameworks.
+
+## How to Get Started
+
+Copy [vootstrap.js](vootstrap.js) to your project.
+
+## Requirements
+
+No special requirements.
+
+## Usage
+
+Examples will be published soon.
+
+## License
+
+`Vootstrap` is available under the Apache 2.0 license. See the [LICENSE](./LICENSE) file for more info.
