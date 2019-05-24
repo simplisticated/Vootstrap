@@ -11,7 +11,9 @@
 
 ## At a Glance
 
-`Vootstrap` is a carefully thought-out combination of [Vue.js](https://vuejs.org) and [Bootstrap](https://getbootstrap.com) frameworks.
+`Vootstrap` is a carefully thought-out combination of [Vue.js](https://vuejs.org) and [Bootstrap](https://getbootstrap.com) frameworks. `Vootstrap` gives you an incredible simplicity and makes your `Bootstrap` experience much more enjoyable 🎉
+
+It works well for both websites and hybrid mobile apps. You can use popular components from `Bootstrap` filled with the power of reactive programming given by `Vue.js` 🚀
 
 ## How to Get Started
 
