@@ -61,7 +61,7 @@ One of the fundamental `Vootstrap` features is ability to swap tag name componen
 <vt-button-large-primary title="My button"></vt-button-large-primary>
 ```
 
-So, you don't need to use CSS classes like `btn-primary`, `btn-lg`, etc. Just put the button's style information in the tag and use it like a regular button.
+So you don't need to use CSS classes like `btn-primary`, `btn-lg`, etc. Just put button's style information into the tag and use it like a regular button.
 
 ## ⚖ License
 
