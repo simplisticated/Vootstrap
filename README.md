@@ -11,9 +11,13 @@
 
 ## 👓 At a Glance
 
-`Vootstrap` is a carefully thought-out combination of [Vue.js](https://vuejs.org) and [Bootstrap](https://getbootstrap.com) frameworks. `Vootstrap` gives you an incredible simplicity and makes your `Bootstrap` experience much more enjoyable 🎉
+`Vootstrap` is a collection of [Vue.js](https://vuejs.org) components with [Bootstrap](https://getbootstrap.com) under the hood.
+
+While `Vootstrap` is a carefully thought-out combination of `Vue` and `Bootstrap` frameworks, it gives you an incredible simplicity and makes your frontend programming experience much more enjoyable 🎉
 
 It works well for both websites and hybrid mobile apps. You can use popular components from `Bootstrap` filled with the power of reactive programming given by `Vue.js`.
+
+The main advantage of `Vootstrap` is the syntax. The entire library is built with keeping in mind the idea of unbelievable flexibility. It's easy enough for beginners and helpful for experienced developers.
 
 ## 🚀 How to Get Started
 
@@ -26,7 +30,9 @@ Copy [vootstrap.js](vootstrap.js) to your project.
 
 ## ⌨ Usage
 
-For now, button is the only component supported by `Vootstrap`. New components will be supported soon.
+Each `Vootstrap` component is actually an HTML tag that you can simply put into your layout.
+
+**For now, [Button](#buttons) is the only component supported by `Vootstrap`. New components will be supported soon.**
 
 Also, take a look at [demo app](demo/index.html) which gives the base understanding of amazing `Vootstrap` principles.
 
