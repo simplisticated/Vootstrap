@@ -4,7 +4,16 @@ function createViewModel(rootElementSelector) {
 		data: {
 			logo: {
 				text: "Vootstrap Demo"
-			}
+			},
+			sections: {
+				main: {
+					isAvailable: true
+				},
+				button: {
+					isAvailable: true
+				}
+			},
+			currentSection: null
 		},
 		methods: {
 		}

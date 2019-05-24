@@ -22,59 +22,72 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home</a>
+					<li :class="['nav-item', {'active': currentSection === sections.main }]" v-if="sections.main.isAvailable">
+						<a class="nav-link" href="#" @click="currentSection = sections.main">Home</a>
+					</li>
+					<li :class="['nav-item', {'active': currentSection === sections.button }]" v-if="sections.button.isAvailable">
+						<a class="nav-link" href="#" @click="currentSection = sections.button">Buttons</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 
 		<div class="container-fluid slight-margin-from-top">
-			<h2>Buttons</h2>
-			<p>
-				<vt-button-primary-small title="Primary Small"></vt-button-primary-small>
-				<vt-button-secondary-small title="Secondary Small"></vt-button-secondary-small>
-				<vt-button-success-small title="Success Small"></vt-button-success-small>
-				<vt-button-danger-small title="Danger Small"></vt-button-danger-small>
-				<vt-button-warning-small title="Warning Small"></vt-button-warning-small>
-				<vt-button-info-small title="Info Small"></vt-button-info-small>
-				<vt-button-light-small title="Light Small"></vt-button-light-small>
-				<vt-button-dark-small title="Dark Small"></vt-button-dark-small>
-				<vt-button-link-small title="Link Small"></vt-button-link-small>
-			</p>
-			<p>
-				<vt-button-primary title="Primary Medium"></vt-button-primary>
-				<vt-button-secondary title="Secondary Medium"></vt-button-secondary>
-				<vt-button-success title="Success Medium"></vt-button-success>
-				<vt-button-danger title="Danger Medium"></vt-button-danger>
-				<vt-button-warning title="Warning Medium"></vt-button-warning>
-				<vt-button-info title="Info Medium"></vt-button-info>
-				<vt-button-light title="Light Medium"></vt-button-light>
-				<vt-button-dark title="Dark Medium"></vt-button-dark>
-				<vt-button-link title="Link Medium"></vt-button-link>
-			</p>
-			<p>
-				<vt-button-primary-outline title="Primary Outline"></vt-button-primary-outline>
-				<vt-button-secondary-outline title="Secondary Outline"></vt-button-secondary-outline>
-				<vt-button-success-outline title="Success Outline"></vt-button-success-outline>
-				<vt-button-danger-outline title="Danger Outline"></vt-button-danger-outline>
-				<vt-button-warning-outline title="Warning Outline"></vt-button-warning-outline>
-				<vt-button-info-outline title="Info Outline"></vt-button-info-outline>
-				<vt-button-light-outline title="Light Outline"></vt-button-light-outline>
-				<vt-button-dark-outline title="Dark Outline"></vt-button-dark-outline>
-				<vt-button-link-outline title="Link Outline"></vt-button-link-outline>
-			</p>
-			<p>
-				<vt-button-primary-large title="Primary Large"></vt-button-primary-large>
-				<vt-button-secondary-large title="Secondary Large"></vt-button-secondary-large>
-				<vt-button-success-large title="Success Large"></vt-button-success-large>
-				<vt-button-danger-large title="Danger Large"></vt-button-danger-large>
-				<vt-button-warning-large title="Warning Large"></vt-button-warning-large>
-				<vt-button-info-large title="Info Large"></vt-button-info-large>
-				<vt-button-light-large title="Light Large"></vt-button-light-large>
-				<vt-button-dark-large title="Dark Large"></vt-button-dark-large>
-				<vt-button-link-large title="Link Large"></vt-button-link-large>
-			</p>
+			<div id="main-section" v-if="currentSection === sections.main">
+			</div>
+			<div id="button-section" v-else-if="currentSection === sections.button">
+				<h1>Amazing Buttons</h1>
+				<p>
+					<h3>Small</h3>
+					<vt-button-primary-small title="Primary Small"></vt-button-primary-small>
+					<vt-button-secondary-small title="Secondary Small"></vt-button-secondary-small>
+					<vt-button-success-small title="Success Small"></vt-button-success-small>
+					<vt-button-danger-small title="Danger Small"></vt-button-danger-small>
+					<vt-button-warning-small title="Warning Small"></vt-button-warning-small>
+					<vt-button-info-small title="Info Small"></vt-button-info-small>
+					<vt-button-light-small title="Light Small"></vt-button-light-small>
+					<vt-button-dark-small title="Dark Small"></vt-button-dark-small>
+					<vt-button-link-small title="Link Small"></vt-button-link-small>
+				</p>
+				<p>
+					<h3>Medium</h3>
+					<vt-button-primary title="Primary Medium"></vt-button-primary>
+					<vt-button-secondary title="Secondary Medium"></vt-button-secondary>
+					<vt-button-success title="Success Medium"></vt-button-success>
+					<vt-button-danger title="Danger Medium"></vt-button-danger>
+					<vt-button-warning title="Warning Medium"></vt-button-warning>
+					<vt-button-info title="Info Medium"></vt-button-info>
+					<vt-button-light title="Light Medium"></vt-button-light>
+					<vt-button-dark title="Dark Medium"></vt-button-dark>
+					<vt-button-link title="Link Medium"></vt-button-link>
+				</p>
+				<p>
+					<h3>Large</h3>
+					<vt-button-primary-large title="Primary Large"></vt-button-primary-large>
+					<vt-button-secondary-large title="Secondary Large"></vt-button-secondary-large>
+					<vt-button-success-large title="Success Large"></vt-button-success-large>
+					<vt-button-danger-large title="Danger Large"></vt-button-danger-large>
+					<vt-button-warning-large title="Warning Large"></vt-button-warning-large>
+					<vt-button-info-large title="Info Large"></vt-button-info-large>
+					<vt-button-light-large title="Light Large"></vt-button-light-large>
+					<vt-button-dark-large title="Dark Large"></vt-button-dark-large>
+					<vt-button-link-large title="Link Large"></vt-button-link-large>
+				</p>
+				<p>
+					<h3>Outline</h3>
+					<vt-button-primary-outline title="Primary Outline"></vt-button-primary-outline>
+					<vt-button-secondary-outline title="Secondary Outline"></vt-button-secondary-outline>
+					<vt-button-success-outline title="Success Outline"></vt-button-success-outline>
+					<vt-button-danger-outline title="Danger Outline"></vt-button-danger-outline>
+					<vt-button-warning-outline title="Warning Outline"></vt-button-warning-outline>
+					<vt-button-info-outline title="Info Outline"></vt-button-info-outline>
+					<vt-button-light-outline title="Light Outline"></vt-button-light-outline>
+					<vt-button-dark-outline title="Dark Outline"></vt-button-dark-outline>
+					<vt-button-link-outline title="Link Outline"></vt-button-link-outline>
+				</p>
+			</div>
+			<div id="undefined-section" v-else>
+			</div>
 		</div>
 	</div>
 
