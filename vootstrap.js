@@ -44,7 +44,7 @@ class ButtonGenerator {
 			size: buttonSizeLarge
 		}
 	*/
-	getCssClasses(appearance) {
+	getCssClassesString(appearance) {
 		var classes = [
 			"btn"
 		];
@@ -67,11 +67,7 @@ class ButtonGenerator {
 		return classes.join(" ");
 	}
 
-	getName(appearance) {
-		return `vt-button-${appearance.style}`;
-	}
-
-	getPossibleNames(appearance) {
+	getComponentNameCombinations(appearance) {
 		let nameComponents = {
 			style: appearance.style ? "-" + appearance.style : "",
 			outline: appearance.outline ? "-outline" : "",
@@ -101,10 +97,10 @@ class ButtonGenerator {
 	}
 
 	register(appearance) {
-		let names = this.getPossibleNames(appearance);
-		let cssClasses = this.getCssClasses(appearance);
+		let componentNames = this.getComponentNameCombinations(appearance);
+		let cssClasses = this.getCssClassesString(appearance);
 		
-		for (var name of names) {
+		for (var name of componentNames) {
 			Vue.component(name, {
 				data: function() {
 					return {
@@ -169,7 +165,7 @@ class ButtonGenerator {
 		return appearances;
 	}
 
-	registerAllAppearances() {
+	registerAllPossibleAppearances() {
 		let allAppearances = this.getPossibleAppearances();
 
 		for (var appearance of allAppearances) {
@@ -178,4 +174,4 @@ class ButtonGenerator {
 	}
 }
 
-new ButtonGenerator().registerAllAppearances();
+new ButtonGenerator().registerAllPossibleAppearances();
