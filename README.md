@@ -15,7 +15,7 @@
 
 While `Vootstrap` is a carefully thought-out combination of `Vue` and `Bootstrap` frameworks, it gives you an incredible simplicity and makes your frontend programming experience much more enjoyable 🎉
 
-It works well for both websites and hybrid mobile apps. You can use popular components from `Bootstrap` filled with the power of reactive programming given by `Vue.js`.
+It works well for both websites and hybrid mobile apps. You can use popular components from `Bootstrap` filled with the power of reactive programming given by `Vue`.
 
 The main advantage of `Vootstrap` is the syntax. The entire library is built with keeping in mind the idea of unbelievable flexibility. It's easy enough for beginners and helpful for experienced developers.
 
